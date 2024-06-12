@@ -39,9 +39,12 @@
         place-items: center;
         margin-top: 5%;
         border-radius: 10px;
+        padding: 25px;
       }
       #image {
         border-radius: 50%;
+        width: 200px;
+        height: 200px;
       }
       div {
         align-items: center;
@@ -65,9 +68,6 @@
         text-align: center;
         margin-top: 10px;
       }
-      #butons {
-        margin-bottom: 20px;
-      }
       .botao {
         background-color: hsl(0, 0%, 20%);
         margin: 15px;
@@ -77,19 +77,29 @@
         width: 250px;
         border-radius: 10px;
       }
+      .botao:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: black;
+        transition: background-color 300ms;
+      }
     </style>
   </head>
   <body>
     <div id="card">
-      <img src="./assets/images/avatar-jessica.jpeg" id="image"/>
-      <div class="titulo"><h1>Jessica Randall</h1>
-      <p>London, United Kingdom</p></div>
-      <h3>"Front-end developer and avid reader."</h3> 
-      <div id="butons"><div class="botao">GitHub</div>
-      <div class="botao">Frontend Mentor</div>
-      <div class="botao">LinkedIn</div>  
-      <div class="botao">Twitter</div> 
-      <div class="botao">Instagram</div>
+      <img src="./assets/images/Imagem do WhatsApp de 2024-06-11 à(s) 21.40.08_638f1e5a.jpg" id="image"/>
+      <div class="titulo"><h1>Caio Pantoja</h1>
+      <p>Recife, Brasil</p></div>
+      <h3>"Front-end developer and Data Analyst."</h3> 
+      <div id="butons"><div class="botao" id="GitHub">GitHub</div>
+      <script>document.getElementById('GitHub').addEventListener('click', function() {window.location.href = 'https://github.com/CaioPantoja'; });</script>
+      <div class="botao" id="Frontend Mentor">Frontend Mentor</div>
+      <script>document.getElementById('Frontend Mentor').addEventListener('click', function() {window.location.href = 'https://www.frontendmentor.io/profile/CaioPantoja'; });</script>
+      <div class="botao" id="LinkedIn">LinkedIn</div>
+      <script>document.getElementById('LinkedIn').addEventListener('click', function() {window.location.href = 'https://www.linkedin.com/in/caio-pantoja-745790311/'; });</script>
+      <div class="botao" id="Twitter">Twitter</div> 
+      <script>document.getElementById('Twitter').addEventListener('click', function() {window.location.href = 'https://x.com/Herethc7'; });</script>
+      <div class="botao" id="Instagram">Instagram</div>
+      <script>document.getElementById('Instagram').addEventListener('click', function() {window.location.href = 'https://www.instagram.com/caiopantoja1/'; });</script>
     </div>
     </div>
 
